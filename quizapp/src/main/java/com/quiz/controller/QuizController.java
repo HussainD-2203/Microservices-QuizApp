@@ -28,6 +28,12 @@ public class QuizController {
 	@Autowired
 	QuizService quizService;
 	
+	//Test Api
+	@GetMapping("/test")
+	public String helloworld() {
+		return "hello World";
+	}
+	
 	//Create Quiz
 	@PostMapping("/create")
 	public ResponseEntity<Object> createQuiz(@RequestParam String category
